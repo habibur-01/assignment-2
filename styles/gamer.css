@@ -249,6 +249,7 @@ ul li a:hover{
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     text-align: center;
+    
   }
   
   .video:hover .image {
@@ -257,7 +258,7 @@ ul li a:hover{
   
   .video:hover .middle {
     opacity: 1;
-    
+
   }
 
 .video-caption {
@@ -457,24 +458,20 @@ footer {
 
 /* Responsive using media query for mobile view */
 
-@media screen and (max-width: 425px) {
-    /* body{
-        max-width: 425px;
-    } */
+@media screen and (max-width:425px) {
     .navbar {
         flex-direction: column;
         height: auto;
     }
-
     .menubar>ul {
         flex-direction: column;
     }
-
     .banner-container {
         flex-direction: column-reverse;
         height: auto;
         padding-top: 78px;
     }
+
     .banner{
         /* text-align: center; */
         width: 300px;
@@ -497,19 +494,24 @@ footer {
         margin-bottom: 50px;
     }
     .banner-img {
-        padding: 0px 50px;
-
+        padding: 0px 40px;
     }
 
     .banner-content {
         width: 400px;
         background-size: contain;
-        margin-left: 60px;
+        display: block;
+        margin-left: 50px;
         padding-top: 0%;
         margin-bottom: 30px;
-        
+
     }
 
+    /* .banner{
+        width: 200px;
+        margin: auto;
+        position: static;
+    } */
 
     .funny-video-title {
         font-size: 2rem;
@@ -517,7 +519,6 @@ footer {
     .video-section-text{
         font-size: 2rem;
     }
-
     .funny-videos-card {
         flex-direction: column;
         gap: 60px;
@@ -525,8 +526,6 @@ footer {
     .funny-video-description{
         font-size: 1rem;
     }
-
-    /* instantly play */
     
     .play-instant-container{
         flex-direction: column;
@@ -549,15 +548,11 @@ footer {
     .play-instant-img .second-img>img{
             width: 100px;
             /* height: 150px; */
-
     }
-
     .play-instant-img .second-img{
         margin-top: -100px;
         margin-left: -50px;
     }
-
-    /* oniline play */
     .play-online-container{
         flex-direction: column;
         justify-content: center;
@@ -584,7 +579,6 @@ footer {
     .play-online-img .online-second-img>img{
         width: 100px;
         /* height: 150px; */
-
     }
     
     .play-online-img .online-second-img{
@@ -594,10 +588,9 @@ footer {
         margin-left: 150px;
         margin-top: -80px;
     }
-
-    /* games category */
-
     .games-category-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
         gap: 0px;
         justify-content: center;
         max-width: 100%;
@@ -666,7 +659,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 768px){
+@media screen and (min-width: 425px) and (max-width: 768px){
     .navbar{
         flex-direction: column;
         height: auto;
