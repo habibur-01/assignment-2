@@ -1,17 +1,21 @@
-⋆{
+⋆ {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-header{
+
+header {
     background: #FFF;
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
 }
-.logo-container{
+
+.logo-container {
     display: flex;
     align-items: center;
     gap: 20px;
 }
-.navbar{
+
+.navbar {
     display: flex;
     justify-content: space-between;
     max-width: 1400px;
@@ -19,39 +23,47 @@ header{
     align-items: center;
     margin: 0 auto;
 }
-.logo-name{   
+
+.logo-name {
     font-size: 2.8rem;
     font-weight: 700;
     color: #0B0223;
- }
- .logo-text{
-     color:  #FF42A5; 
- }
- .logo-container img{
-     max-width: 86px;
-     max-height: 40px;
-     object-fit: cover;
- }
-.menubar > ul{
+}
+
+.logo-text {
+    color: #FF42A5;
+}
+
+.logo-container img {
+    max-width: 86px;
+    max-height: 40px;
+    object-fit: cover;
+}
+
+.menubar>ul {
     display: flex;
     gap: 32px;
     align-items: center;
 }
-ul li{
+
+ul li {
     list-style: none;
-    
+
 }
-ul li a{
+
+ul li a {
     text-decoration: none;
     padding: 10px;
     color: #3C354F;
     font-size: 1.1rem;
     font-weight: 500;
 }
-.icon{
+
+.icon {
     margin-left: 5px;
 }
-ul li>button{ 
+
+/* ul li>button{ 
     display: flex;
     align-items: center;
     height: 56px;
@@ -62,11 +74,12 @@ ul li>button{
     color: #3C354F;
     font-size: 1.1rem;
     font-weight: 500;
-}
-.icon-part-text{
+} */
+.icon-part-text {
     margin-right: 15px;
 }
-.icon-p{
+
+.nav-icon-p {
     display: flex;
     align-items: center;
     border: none;
@@ -81,14 +94,16 @@ ul li>button{
 }
 
 /* banner section start */
-.banner-container{
+.banner-container {
     background-color: #FFFFFF;
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     gap: 60px;
     height: 700px;
+
 }
-.banner-content{
+
+.banner-content {
     background-image: url(../images/Group\ 14.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -98,14 +113,14 @@ ul li>button{
     justify-content: center;
     align-items: center;
 }
-.banner-title{
+
+.banner-title {
     color: #0B0223;
     font-size: 3rem;
     font-weight: 600;
-    
-   
 }
-.focus-banner-title{
+
+.focus-banner-title {
     font-size: 5rem;
     font-weight: 800;
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
@@ -114,13 +129,15 @@ ul li>button{
     -webkit-text-fill-color: transparent;
     margin-bottom: 26px;
 }
-.banner-description{
+
+.banner-description {
     color: #534C64;
     font-size: 1.2rem;
     font-weight: 500;
     padding-left: 10px;
 }
-.btn-primary{
+
+.btn-primary {
     color: #FFF;
     background-color: #FF42A5;
     padding: 21px 40px;
@@ -129,16 +146,82 @@ ul li>button{
     font-size: 1.2rem;
     font-weight: 600;
 }
-.btn-secondary{
-    background-color:#4EC5F7;
+
+.btn-secondary {
+    background-color: #4EC5F7;
 }
-.banner-img{
+
+.banner-img {
     padding-right: 240px;
-    padding-top: 50px;
 }
-.banner-img >img{
+
+.banner-img>img {
     width: 100%;
+    height: 100%;
 }
+
 /* funny videos */
+.funny-video-container {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.funny-video-content {
+    text-align: center;
+}
+
+.funny-video-title,
+.play-instant-title {
+    color: #0B0223;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.video-section-text {
+    font-size: 3rem;
+    font-weight: 800;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.funny-video-description,
+.play-instant-description {
+    color: #534C64;
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 25px;
+    margin-bottom: 48px;
+}
+
+.funny-videos-card {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 24px;
+}
+
+.videos-box {
+    width: 342px;
+    height: 400px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+}
+
+.videos-box .video>img {
+    width: 100%;
+    height: 100%;
+}
+
+.video-caption {
+    max-width: 342px;
+    color: #534C64;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+}
 
 
