@@ -267,3 +267,30 @@ ul li a {
 .play-inner-text {
     color: #F948B2;
 }
+
+/* Play Online */
+.play-online-container{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding: 120px 0;
+    max-width: 1400px;
+    margin: 0 auto;
+    background-color:#FFF;
+}
+.play-online-title{
+    max-width: 400px;
+}
+.onilne-inner-text {
+    font-weight: 700;
+
+}
+
+.play-online-description{
+    max-width: 480px;
+}
+.online-second-img{
+    margin-left: 530px;
+    margin-top: -250px;
+}
