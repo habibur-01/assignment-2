@@ -498,7 +498,7 @@ footer {
     }
 
     .banner-content {
-        width: 400px;
+        max-width: 400px;
         background-size: contain;
         display: block;
         margin-left: 50px;
