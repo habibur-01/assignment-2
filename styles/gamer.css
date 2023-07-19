@@ -324,10 +324,80 @@ ul li a {
     font-size: 1.1rem;
     font-weight: 600;
 }
-.games-category:hover{
+
+.games-category:hover {
     border: 1px solid #FF42A5;
     border-radius: 50px;
 }
+
 /* Games category section end */
 
 /* Footer start */
+footer {
+    background-color: #0B0223;
+    padding: 120px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-logo-name {
+    color: #FFF;
+    ;
+}
+
+.features {
+    display: flex;
+    gap: 60px;
+    margin-top: 65px;
+}
+
+.features-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.features-title a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.features-title a:hover {
+    color: red;
+}
+
+.social-media-icon {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+    margin-top: 65px;
+    margin-bottom: 74px;
+}
+.rules-policy-part{
+    text-align: center;
+    /* padding: 0 200px; */
+}
+
+.rules-policy-part a {
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 1rem;
+    font-weight: 500;
+    margin-right: 60px;
+    text-decoration: none;
+    
+}
+
+.copyright-text {
+    color: rgba(255, 255, 255, 0.60);
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 28px;
+}
+.footer-logo{
+    justify-content: center;
+}
