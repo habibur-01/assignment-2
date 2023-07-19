@@ -1,13 +1,14 @@
 ⋆ {
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
 header {
     background: #FFF;
-    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.02);
 }
+
 
 .logo-container {
     display: flex;
@@ -57,6 +58,9 @@ ul li a {
     color: #3C354F;
     font-size: 1.1rem;
     font-weight: 500;
+}
+ul li a:hover{
+    color: #F948B2;
 }
 
 .icon {
@@ -248,11 +252,12 @@ ul li a {
   }
   
   .video:hover .image {
-    opacity: 0.3;
+    opacity: 0.3;  
   }
   
   .video:hover .middle {
     opacity: 1;
+    
   }
 
 .video-caption {
@@ -343,6 +348,9 @@ ul li a {
 }
 
 /* Games category section start */
+.games-category-section{
+    background-image: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+}
 .games-category {
     display: flex;
     gap: 16px;
@@ -353,7 +361,6 @@ ul li a {
     max-width: 1400px;
     margin: 0 auto;
     padding: 120px 0px;
-    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
     /* display: grid;
     grid-template-columns: repeat(5, 1fr); */
     display: flex;
@@ -450,7 +457,10 @@ footer {
 
 /* Responsive using media query for mobile view */
 
-@media screen and (max-width:576px) {
+@media screen and (max-width: 425px) {
+    /* body{
+        max-width: 425px;
+    } */
     .navbar {
         flex-direction: column;
         height: auto;
@@ -515,6 +525,8 @@ footer {
     .funny-video-description{
         font-size: 1rem;
     }
+
+    /* instantly play */
     
     .play-instant-container{
         flex-direction: column;
@@ -544,6 +556,8 @@ footer {
         margin-top: -100px;
         margin-left: -50px;
     }
+
+    /* oniline play */
     .play-online-container{
         flex-direction: column;
         justify-content: center;
@@ -584,8 +598,6 @@ footer {
     /* games category */
 
     .games-category-container{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
         gap: 0px;
         justify-content: center;
         max-width: 100%;
@@ -654,7 +666,7 @@ footer {
     }
 }
 
-@media screen and (min-width:576px) and (max-width: 768px){
+@media screen and (max-width: 768px){
     .navbar{
         flex-direction: column;
         height: auto;
@@ -687,7 +699,7 @@ footer {
         align-items: center;
     }
     .banner-img>img{
-        max-width: 600px;
+        max-width: 500px;
         height: 100%;
         margin-left: 150px;
     }
