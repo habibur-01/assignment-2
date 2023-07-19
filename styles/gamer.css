@@ -464,7 +464,27 @@ footer {
         height: auto;
         padding-top: 78px;
     }
-
+    .banner{
+        /* text-align: center; */
+        width: 300px;
+        margin: 0 auto;
+    }
+    .banner-title {
+        font-size: 2rem;
+        margin: 0;
+        padding: 0;
+    }
+    .focus-banner-title{
+        font-size: 3rem;
+        /* margin-bottom: 10px; */
+    }
+    .banner-description{
+        font-size: 0.8rem;
+    }
+    .btn-primary{
+        padding: 10px 20px;
+        margin-bottom: 50px;
+    }
     .banner-img {
         padding: 0px 50px;
 
@@ -473,14 +493,13 @@ footer {
     .banner-content {
         width: 400px;
         background-size: contain;
-        display: block;
+        margin-left: 60px;
+        padding-top: 0%;
+        margin-bottom: 30px;
+        
     }
 
-    /* .banner{
-        width: 200px;
-        margin: auto;
-        position: static;
-    } */
+
     .funny-video-title {
         font-size: 2rem;
     }
