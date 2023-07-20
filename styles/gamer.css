@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap');
 ⋆ {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+body{
+    font-family: 'Work Sans', sans-serif;
 }
 
 header {
@@ -270,7 +274,7 @@ ul li a:hover {
     backface-visibility: hidden;
 }
 
-.middle {
+.middle-button {
     transition: .5s ease;
     opacity: 0;
     position: absolute;
@@ -286,7 +290,7 @@ ul li a:hover {
     border-radius: 16px;
 }
 
-.video:hover .middle {
+.video:hover .middle-button {
     opacity: 1;
 
 }
@@ -514,7 +518,7 @@ footer {
 
     .banner {
         /* text-align: center; */
-        width: 300px;
+        /* width: 300px; */
         margin: 0 auto;
     }
 
@@ -543,7 +547,7 @@ footer {
     }
 
     .banner-content {
-        max-width: 400px;
+        /* max-width: 400px; */
         background-size: contain;
         display: block;
         margin-left: 50px;
@@ -552,12 +556,26 @@ footer {
 
     }
 
-    /* .banner{
-        width: 200px;
-        margin: auto;
-        position: static;
-    } */
+    /* we are gamer start */
 
+    .gamer-container {
+        flex-direction: column;
+        justify-content: center;
+        padding: 0px;
+        text-align: center;
+    }
+    .gamer-img>img{
+        width: 100%;
+    }
+    .gamer-content{
+        width: 100%;
+    }
+    .gamer-description{
+        width: 400px;
+        padding: 15px;
+    }
+
+    /* funny videos section start */
     .funny-video-title {
         font-size: 2rem;
     }
@@ -595,7 +613,7 @@ footer {
     .play-instant-img .first-img>img {
         width: 200px;
         height: 200px;
-        padding: 0px;
+        padding: 0 20px;
     }
 
     .play-instant-img .second-img>img {
@@ -643,7 +661,9 @@ footer {
     }
 
     .play-online-img .online-second-img {
-        margin: 0%;
+        margin: 0;
+        width: 100%;
+
     }
 
     .play-online-img .online-second-img {
@@ -762,8 +782,8 @@ footer {
     }
 
     .banner-img {
-        max-width: 700px;
-        max-height: 100%;
+        width: 700px;
+        height: 100%;
         object-fit: contain;
         display: flex;
         justify-content: center;
@@ -775,12 +795,33 @@ footer {
         height: 100%;
         margin-left: 150px;
     }
+    /* Gamer section start */
+    .gamer-container {
+        flex-direction: column;
+        justify-content: center;
+        padding: 0px;
+        text-align: center;
+    }
+    .gamer-img>img{
+        width: 100%;
+    }
+    .gamer-content{
+        width: 100%;
+    }
+    .gamer-description{
+        width: 600px;
+        padding: 25px;
+        margin: 0 auto;
+    }
 
     /* Funny videos */
     .funny-videos-card {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
+        gap: 5px;
+        padding: 25px;
+        width: 700px;
+        margin: 0 auto;
     }
 
     .videos-box {
