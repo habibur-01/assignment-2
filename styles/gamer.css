@@ -164,6 +164,9 @@ ul li a:hover {
 .btn-secondary {
     background-color: #4EC5F7;
 }
+.btn-primary:hover{
+    transform: translateY(5px);
+}
 
 .banner-icon {
     margin-right: 10px;
@@ -498,9 +501,12 @@ footer {
 /* Responsive using media query for mobile view */
 
 @media screen and (max-width: 425px) {
+   
     .navbar {
         flex-direction: column;
         height: auto;
+        width: 100%;
+        margin: 0;
     }
 
     .menubar>ul {
@@ -509,6 +515,9 @@ footer {
     .nav-icon-part{
         gap: 10px;
     }
+    .nav-icon-part .fa-brands{
+        font-size: 32px;
+ }
 
     .banner-container {
         flex-direction: column-reverse;
@@ -571,8 +580,10 @@ footer {
         width: 100%;
     }
     .gamer-description{
-        width: 400px;
-        padding: 15px;
+        width: 375px;
+        margin: 0 auto;
+        font-size: 1rem;
+        margin-bottom: 25px;
     }
 
     /* funny videos section start */
@@ -761,6 +772,16 @@ footer {
         height: auto;
         margin-bottom: 20px;
     }
+    .nav-icon-part{
+        flex-direction: column;
+        height: auto;
+        margin: 0%;
+        gap: 0px;
+        padding: 10px 10px 5px;
+    }
+    .nav-icon-part .fa-brands{
+           font-size: x-large;
+    }
 
     .banner-container {
         flex-direction: column;
@@ -772,9 +793,9 @@ footer {
         background-image: none;
         background-image: linear-gradient(to right, #ddd5d9 0%, rgb(238, 238, 240));
         background-size: contain;
-        margin-left: 75px;
+        /* margin-left: 75px; */
         border-radius: 10px;
-
+        margin: 0 auto;
     }
 
     .btn-primary {
